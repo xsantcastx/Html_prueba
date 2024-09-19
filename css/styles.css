@@ -1,0 +1,322 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; 
+    padding: 20px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+/* Flexbox layout for the logo and company name */
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px; 
+    margin-right: 15px; 
+}
+
+header .company-name {
+    font-family: 'Georgia', serif; 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #00aaf8; 
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+    display: inline-block;
+}
+
+header .company-name:hover {
+    color: #005eff; /* Slightly brighter gold on hover for interaction */
+    transition: color 0.3s ease;
+}
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-media img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Galería de productos */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid .item img {
+    width: 100%;
+    height: auto;
+}
+/* Formulario de presupuesto */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Contenedor principal que usa Flexbox */
+.main-container {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+    gap: 20px; 
+}
+
+/* Sección Izquierda */
+.left-section {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Sección Central */
+.center-section {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos generales de las secciones */
+section {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+/* Estilo para lista de servicios en la sección izquierda */
+.left-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.left-section ul li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.left-section ul li strong {
+    color: #0056b3;
+}
+
+/* Botón de llamada a la acción */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #003d7a;
+}
+
+/* Estilo de la sección central */
+.center-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.center-section ul li {
+    background: #e9ecef;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.center-section ul li strong {
+    color: #333;
+}
+
+/* Sección de Sobre Nosotros */
+#about-us {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    text-align: justify;
+}
+
+#about-us h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#about-us p {
+    margin-bottom: 15px;
+}
+
+.right-section {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la galería */
+.gallery {
+    padding: 20px;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Grid para los productos */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo para cada item */
+.item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item-content {
+    padding: 15px;
+}
+
+.item-title {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #0056b3;
+}
+
+.item-date {
+    font-size: 14px;
+    color: #777;
+    margin: 0 0 10px;
+}
+
+.item-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Efecto hover para los items */
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

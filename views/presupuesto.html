@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Empresa - Presupuesto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="js/script.js" defer></script> <!-- Script para validación -->
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <header>
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo de la empresa">
+            <span class="company-name">Inversiones Seguras S.A.</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../views/productos.html">Productos</a></li>
+                <li><a href="../views/presupuesto.html" class="active">Presupuesto</a></li>
+                <li><a href="../views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulario de solicitud de presupuesto -->
+    <main>
+        <section>
+            <h2>Solicitar Presupuesto</h2>
+            <form id="presupuesto-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required>
+
+                <label for="info">Solicite más información:</label>
+                <textarea id="info" name="info" rows="5" required></textarea>
+
+                <div>
+                    <input type="checkbox" id="politica" name="politica" required>
+                    <label for="politica">Acepto la <a href="#">Política de privacidad</a></label>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="social-media">
+            <a href="https://facebook.com"><img src="../img/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="../img/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="../img/instagram.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Inversiones Seguras S.A. Todos los derechos reservados.</p>
+        <div class="address">
+            <p>Dirección: Pl. La Pau núm. 6, Castellon, España</p>
+            <p>Aviso Legal</p>
+        </div>
+    </footer>
+
+</body>
+</html>
